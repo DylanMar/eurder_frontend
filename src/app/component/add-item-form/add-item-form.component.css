@@ -1,0 +1,16 @@
+div {
+    margin-left: 50px;
+    width: 50%;
+}
+
+h2 {
+    font-size: x-large;
+    font-weight: 400;
+}
+
+form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}

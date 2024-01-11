@@ -1,0 +1,19 @@
+<h2>Items</h2>
+<div class="card-container">
+  <mat-card  class="example-card" *ngFor="let item of items">
+      <mat-card-header>
+        <mat-card-title>{{item.name}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="placeholder image">
+      <mat-card-content>
+        <p>{{item.description}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <p>€ {{item.price}}</p>
+        <div>
+          <p>{{item.resupplyUrgency}}</p>
+          <mat-icon fontIcon="flag" [style.color]="getColor(item.resupplyUrgency)"></mat-icon>
+        </div>
+      </mat-card-actions>
+  </mat-card>
+</div> 

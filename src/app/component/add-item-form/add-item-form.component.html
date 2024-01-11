@@ -1,0 +1,28 @@
+<div>
+  <h2>Add item</h2>
+  <form [formGroup]="itemForm" (ngSubmit)="onSubmit()">
+  
+    <mat-form-field>
+      <mat-label for="name">Name</mat-label>
+      <input matInput type="text" id="name" formControlName="name">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label for="description">Description</mat-label>
+      <textarea matInput type="text" id="description" formControlName="description"></textarea>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label for="price">Price</mat-label>
+      <input matInput type="number" id="price" formControlName="price">
+    </mat-form-field>
+  
+    <mat-form-field>
+      <mat-label for="amountInStock">Amount in Stock</mat-label>
+      <input matInput type="number" id="amountInStock" formControlName="amountInStock">
+    </mat-form-field>
+  
+    <button  mat-raised-button type="submit" [disabled]="itemForm.invalid" color="primary">Submit</button>
+  
+  </form>
+</div>
